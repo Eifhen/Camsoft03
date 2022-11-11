@@ -2,6 +2,7 @@
 # Camsoft03 
 Práctica para la empresa camsoft
 trabajo un API en .net core y un UI en react
+Recordar restablecer módulos de node
 
 ## Pantallas:
 
