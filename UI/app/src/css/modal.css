@@ -1,0 +1,73 @@
+/* -------- [ Modal ] ------- */
+
+.modal-overlay {
+    z-index: 999;
+    position:fixed;
+    top:0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+    background-color:rgba(0, 1, 1, 0.637);
+    width:100%;
+    height:100%;
+    padding:2rem;
+    
+    display:none; /* display:flex; */
+    align-items: center;
+    justify-content: center;
+
+    opacity: 0;
+    pointer-events: none;
+
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+
+}
+
+.modal-show {
+    display:flex !important;
+    opacity: 1 !important;
+    transition: opacity .15s linear;
+    pointer-events: all !important;
+}
+
+.modal {
+    padding: 2rem;
+    border-radius:5px;
+    margin: 0 auto;
+}
+
+.modal-title {
+    color:var(--blue-royal);
+    margin: 0;
+}
+
+.modal-subtitle {
+    color:var(--gray-loyal);
+    margin-top:0.4rem;
+    margin-bottom:1rem;
+}
+
+.modal-msg{
+    padding:0.8rem 0.4rem;
+    margin:0.5rem 0;
+    font-size: 0.9rem;
+    width:100%;
+    border-radius: 5px;
+    color: var(--pure);
+}
+
+
+.modal-sm { width: 30vw; }
+.modal-md { width: 50vw; }
+.modal-lg { width: 70vw; }
+.modal-xl { width: 90vw; }
+
+@media( max-width:800px){
+    .modal-sm { width: 100vw; }
+    .modal-md { width: 100vw; }
+    .modal-lg { width: 100vw; }
+    .modal-xl { width: 100vw; }
+
+}
